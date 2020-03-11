@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--响应式布局 1.在 meta 中声明 viewport 元标签-->
+    <!--视口宽度设置为设备宽度，视口不能缩放-->
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Animated Login Form</title>
+    <!--引入Google font，配合CSS的font-family-->
+    <link href="https://fonts.font.im/css?family=Poppins:600" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!--引入fontawesome的css，引入kit的js图标不能正常显示-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!--左侧wave图，在-1层-->
+    <img src="img/wave.png" alt="" class="wave">
+    <!--第0层的容器-->
+    <div class="container">
+        <!--左侧的图片，来自undraw.co-->
+        <div class="img">
+            <img src="img/img.svg" alt="img">
+        </div>
+        <!--右侧的登录区-->
+        <div class="login-container">
+            <form action="index.html">
+                <!--用户头像示例-->
+                <img class="avatar" src="img/avatar.svg" alt="avatar">
+                <h2>Welcome</h2>
+                <!--用户名-->
+                <div class="input-div one">
+                    <div class="i">
+                        <!--使用官网建议的fas仅能显示方框，改成老版本的fa可以正常显示图标-->
+                        <i class="fa fa-user"></i>
+                    </div>
+                    <div>
+                        <h5>Username</h5>
+                        <input type="text" class="input">
+                    </div>
+                </div>
+                <!--密码框-->
+                <div class="input-div two">
+                    <div class="i">
+                        <i class="fa fa-lock"></i>
+                    </div>
+                    <div>
+                        <h5>Password</h5>
+                        <input type="password" class="input">
+                    </div>
+                </div>
+                <!--忘记密码-->
+                <a href="#">Forgot Password?</a>
+                <!--提交按钮-->
+                <input type="submit" class="btn" value="Login">
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
